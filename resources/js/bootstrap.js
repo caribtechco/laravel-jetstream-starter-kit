@@ -10,6 +10,10 @@ import '@popperjs/core'
 
 // window.$ = window.jQuery = require('jquery');
 // const bootstrap = require('bootstrap')
+
+// Import our custom CSS
+import '../sass/app.scss';
+
 // window.bootstrap = bootstrap
 import * as bootstrap from 'bootstrap';
 
