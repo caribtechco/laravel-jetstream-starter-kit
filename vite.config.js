@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import laravel, { refreshPaths } from 'laravel-vite-plugin';
+import vitePluginRequire from "vite-plugin-require";
 import path from 'path';
 
 export default defineConfig({
@@ -14,6 +15,11 @@ export default defineConfig({
                 'app/Http/Livewire/**',
             ],
         }),
+		vitePluginRequire({
+			// @fileRegex RegExp
+			// optional：default file processing rules are as follows
+			// fileRegex:/(.jsx?|.tsx?|.vue)$/
+		}),
     ],
     resolve: {
         alias: {
