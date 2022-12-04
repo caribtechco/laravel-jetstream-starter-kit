@@ -1,4 +1,5 @@
-window._ = require('lodash');
+import loadash from 'lodash'
+window._ = loadash
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -6,21 +7,22 @@ window._ = require('lodash');
  * code may be modified to fit the specific needs of your application.
  */
 
-import '@popperjs/core'
+import * as Popper from '@popperjs/core'
+window.Popper = Popper
 
-const bootstrap = require('bootstrap')
+import 'bootstrap'
 
-window.bootstrap = bootstrap
+// window.bootstrap = bootstrap
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
+ import axios from 'axios'
+ window.axios = axios
 
-window.axios = require('axios');
-
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
