@@ -9,6 +9,7 @@
         "guzzlehttp/guzzle": "^7.2",
         "kineticamobile/lumki": "^0.1.11",
         "laravel/framework": "^9.19",
+        "laravel/horizon": "^5.10",
         "laravel/jetstream": "^2.12",
         "laravel/sanctum": "^3.0",
         "laravel/telescope": "^4.9",
@@ -43,7 +44,8 @@
             "@php artisan package:discover --ansi"
         ],
         "post-update-cmd": [
-            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
+            "@php artisan horizon:publish --ansi"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
