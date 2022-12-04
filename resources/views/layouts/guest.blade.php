@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
 
-    </head>
-    <body class="bg-light font-sans antialiased">
-        {{ $slot }}
-    </body>
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+    @livewireStyles
+    @powerGridStyles
+
+</head>
+
+<body class="bg-light font-sans antialiased">
+    {{ $slot }}
+
+    @livewireScripts
+    @powerGridScripts
+</body>
+
 </html>

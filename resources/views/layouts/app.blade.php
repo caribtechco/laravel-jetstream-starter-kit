@@ -15,6 +15,7 @@
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
         @livewireStyles
+        @powerGridStyles
 
         <!-- Scripts -->
         {{-- <script src="{{ mix('js/app.js') }}" defer></script> --}}
@@ -38,6 +39,7 @@
         @stack('modals')
 
         @livewireScripts
+        @powerGridScripts
 
         @stack('scripts')
     </body>
