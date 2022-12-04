@@ -40,6 +40,7 @@
 
         @livewireScripts
         @powerGridScripts
+        <x-livewire-alert::scripts />
 
         @stack('scripts')
     </body>

@@ -23,6 +23,8 @@
 
     @livewireScripts
     @powerGridScripts
+    <x-livewire-alert::scripts />
+
 </body>
 
 </html>
