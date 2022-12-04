@@ -8,14 +8,9 @@ window._ = require('lodash');
 
 import '@popperjs/core'
 
-// window.$ = window.jQuery = require('jquery');
-// const bootstrap = require('bootstrap')
+const bootstrap = require('bootstrap')
 
-// Import our custom CSS
-import '../sass/app.scss';
-
-// window.bootstrap = bootstrap
-import * as bootstrap from 'bootstrap';
+window.bootstrap = bootstrap
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
