@@ -5,7 +5,31 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+
+    <div class="card bg-white mb-3">
+        <div class="card-body shadow-sm">
+          @livewire(
+                'nav-tabs', [
+                    "tabs" => [
+                        "table" => [
+                            "title" => "User Table",
+                            'livewire' => 'admin.table.user-table'
+                        ],
+                        // "grid" => [
+                        //     "title" => "User Grid",
+                        //     'livewire' => 'admin.user-search'
+                        // ],
+                        // "new" => [
+                        //     "title" => "New User",
+                        //     'livewire' => 'admin.user-create'
+                        // ],
+                    ]
+                ]
+          )
+        </div>
+    </div>
+
+    {{-- <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="space-y-10">
@@ -40,6 +64,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
 </x-app-layout>

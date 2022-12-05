@@ -19,6 +19,13 @@ class Kernel extends ConsoleKernel
 
         $schedule->command('telescope:prune')->daily();
 
+        $schedule->command('blacklist:update-email-domains')
+             ->monthly()
+             ->sundays()
+             ->at('05:00')
+             ->withoutOverlapping()
+             ->sendOutputTo(storage_path('logs/email-domains-blacklist.txt'));
+
     }
 
     /**

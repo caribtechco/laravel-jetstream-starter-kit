@@ -5,7 +5,27 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+    <div class="card bg-white mb-3 shadow-sm">
+        <div class="card-body ">
+            <livewire:admin.table.role-table />
+        </div>
+        <div class="card-footer">
+            <div class="row pt-3">
+                <div class="col-md-6">
+                    <a class="btn btn-warning" href="{{ route('lumki.permissions.index') }}">
+                        {{ __('Manage Permissions') }}
+                    </a>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a class="btn btn-primary text-white" href="{{ route('lumki.roles.create') }}">
+                        {{ __('lumki::ui.create_role') }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="space-y-10">
@@ -40,6 +60,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
 </x-app-layout>

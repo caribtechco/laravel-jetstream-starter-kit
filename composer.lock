@@ -4,8 +4,62 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ec852652cc4ddb7994fe773af2d4ba8",
+    "content-hash": "044c370e0b66bd65718f953d0d0f52ac",
     "packages": [
+        {
+            "name": "alariva/laravel-email-domain-blacklist",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alariva/laravel-email-domain-blacklist.git",
+                "reference": "01cf76746c76e19b2019ecaa328eac96feed2082"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alariva/laravel-email-domain-blacklist/zipball/01cf76746c76e19b2019ecaa328eac96feed2082",
+                "reference": "01cf76746c76e19b2019ecaa328eac96feed2082",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.8|^6.0|^7.0|^8.0|^9.0",
+                "laravel/framework": "^5.8|^6.0|^7.0|^8.0|^9.0",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.1",
+                "orchestra/testbench": "^3.9|^4.0|^7.0",
+                "phpunit/phpunit": "^7.5|^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Alariva\\EmailDomainBlacklist\\EmailDomainBlacklistServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Alariva\\EmailDomainBlacklist\\": "src/Alariva/EmailDomainBlacklist"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ariel Vallese",
+                    "email": "alariva@gmail.com"
+                }
+            ],
+            "description": "A Laravel package for adding email domain blacklist validation rule",
+            "support": {
+                "issues": "https://github.com/alariva/laravel-email-domain-blacklist/issues",
+                "source": "https://github.com/alariva/laravel-email-domain-blacklist/tree/v1.0.3"
+            },
+            "time": "2022-10-04T15:59:12+00:00"
+        },
         {
             "name": "bacon/bacon-qr-code",
             "version": "2.0.7",
@@ -3390,6 +3444,222 @@
                 }
             ],
             "time": "2022-11-10T15:20:29+00:00"
+        },
+        {
+            "name": "osoobe/laravel-settings",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/osoobe/laravel-settings.git",
+                "reference": "82dd321bfd6b346d43ec7e8551096965315f4c6d"
+            },
+            "require": {
+                "illuminate/support": "^7.0|^8.0|^9.0",
+                "osoobe/laravel-utilities": "*"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0"
+            },
+            "default-branch": true,
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Osoobe\\Laravel\\Settings\\LaravelSettingsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Osoobe\\Laravel\\Settings\\": "./src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Osoobe\\Laravel\\Settings\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oshane Bailey",
+                    "email": "b4.oshany@gmail.com"
+                }
+            ],
+            "description": "A description for laravel-settings.",
+            "keywords": [
+                "laravel"
+            ],
+            "time": "2022-12-05T02:08:15+00:00"
+        },
+        {
+            "name": "osoobe/laravel-traits",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/osoobe/laravel-traits.git",
+                "reference": "646c3369a846897806965d4c8135a6b9ef0394ed"
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+                "osoobe/laravel-utilities": "*"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0"
+            },
+            "default-branch": true,
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Osoobe\\LaravelTraits\\LaravelTraitsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Osoobe\\LaravelTraits\\": "./src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Osoobe\\LaravelTraits\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oshane Bailey",
+                    "email": "b4.oshany@gmail.com"
+                }
+            ],
+            "description": "A description for laravel-traits.",
+            "keywords": [
+                "laravel"
+            ],
+            "time": "2022-12-05T02:07:14+00:00"
+        },
+        {
+            "name": "osoobe/laravel-utilities",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/osoobe/laravel-utilities.git",
+                "reference": "640bbe0bb845473bc0ffe45617f1f57963e9a946"
+            },
+            "require": {
+                "alariva/laravel-email-domain-blacklist": "*",
+                "guzzlehttp/guzzle": "^7.3",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0"
+            },
+            "default-branch": true,
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Osoobe\\Utilities\\UtilitiesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Osoobe\\Utilities\\": "./src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Osoobe\\Utilities\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oshane Bailey",
+                    "email": "b4.oshany@gmail.com"
+                }
+            ],
+            "description": "A description for utilities.",
+            "keywords": [
+                "laravel"
+            ],
+            "time": "2022-12-05T02:00:26+00:00"
+        },
+        {
+            "name": "osoobe/livewire-bootstrap-components",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/osoobe/livewire-bootstrap-components.git",
+                "reference": "1a4628833bfc60a1303c1c6be99681c367a8947c"
+            },
+            "require": {
+                "illuminate/support": "^7.0|^8.0|^9.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0"
+            },
+            "default-branch": true,
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Osoobe\\Livewire\\BootstrapComponents\\LivewireBootstrapComponentsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Osoobe\\Livewire\\BootstrapComponents\\": "./src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Osoobe\\Livewire\\BootstrapComponents\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oshane Bailey",
+                    "email": "b4.oshany@gmail.com"
+                }
+            ],
+            "description": "A description for livewire-bootstrap-components.",
+            "keywords": [
+                "laravel"
+            ],
+            "time": "2022-12-05T02:13:10+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -9470,7 +9740,12 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "osoobe/laravel-settings": 20,
+        "osoobe/laravel-traits": 20,
+        "osoobe/laravel-utilities": 20,
+        "osoobe/livewire-bootstrap-components": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

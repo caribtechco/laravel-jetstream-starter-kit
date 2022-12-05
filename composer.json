@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "alariva/laravel-email-domain-blacklist": "^1.0",
         "guzzlehttp/guzzle": "^7.2",
         "jantinnerezo/livewire-alert": "^2.2",
         "kineticamobile/lumki": "^0.1.11",
@@ -16,6 +17,10 @@
         "laravel/telescope": "^4.9",
         "laravel/tinker": "^2.7",
         "livewire/livewire": "^2.5",
+        "osoobe/laravel-settings": "dev-master",
+        "osoobe/laravel-traits": "dev-master",
+        "osoobe/laravel-utilities": "dev-master",
+        "osoobe/livewire-bootstrap-components": "dev-master",
         "power-components/livewire-powergrid": "^3.5"
     },
     "require-dev": {
@@ -69,5 +74,39 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": {
+        "bastinald/laravel-livewire-forms": {
+            "type": "git",
+            "url": "https://github.com/osoobe/laravel-livewire-forms.git"
+        },
+        "osoobe/laravel-utilities": {
+            "type": "git",
+            "url": "https://github.com/osoobe/laravel-utilities.git"
+        },
+        "osoobe/laravel-traits": {
+            "type": "git",
+            "url": "https://github.com/osoobe/laravel-traits.git"
+        },
+        "osoobe/laravel-settings": {
+            "type": "git",
+            "url": "https://github.com/osoobe/laravel-settings.git"
+        },
+        "osoobe/livewire-bootstrap-components": {
+            "type": "git",
+            "url": "https://github.com/osoobe/livewire-bootstrap-components.git"
+        },
+        "osoobe/laravel-related-content": {
+            "type": "git",
+            "url": "https://github.com/osoobe/laravel-related-content.git"
+        },
+        "osoobe/laravel-notification-settings": {
+            "type": "git",
+            "url": "https://github.com/osoobe/laravel-notification-settings.git"
+        },
+        "laravel-crm": {
+            "type": "git",
+            "url": "https://github.com/osoobe/laravel-crm.git"
+        }
+    }
 }
