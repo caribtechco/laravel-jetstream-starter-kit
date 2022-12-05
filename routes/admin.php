@@ -9,5 +9,8 @@ Route::impersonate();
 
 
 
+Route::get('dashboard', 'Admin\AdminController@index')->name('dashboard');
+
+
 
 ?>

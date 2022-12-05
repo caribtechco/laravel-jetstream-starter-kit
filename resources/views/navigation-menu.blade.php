@@ -85,14 +85,22 @@
                                 {{ __('Profile') }}
                             </x-jet-dropdown-link>
 
-
-@lumki
-
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
                                     {{ __('API Tokens') }}
                                 </x-jet-dropdown-link>
                             @endif
+
+                            @hasanyrole('Admin')
+                                <hr class="dropdown-divider">
+                                <!-- Account Management -->
+                                <h6 class="dropdown-header small text-muted">
+                                    {{ __('Admin Tools') }}
+                                </h6>
+                                <x-jet-dropdown-link href="{{ route('admin.dashboard') }}">
+                                    {{ __('Admin Settings') }}
+                                </x-jet-dropdown-link>
+                            @endhasanyrole
 
                             <hr class="dropdown-divider">
 
