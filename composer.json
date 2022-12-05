@@ -21,7 +21,9 @@
         "osoobe/laravel-traits": "dev-master",
         "osoobe/laravel-utilities": "dev-master",
         "osoobe/livewire-bootstrap-components": "dev-master",
-        "power-components/livewire-powergrid": "^3.5"
+        "power-components/livewire-powergrid": "^3.5",
+        "spatie/laravel-sluggable": "^3.4",
+        "spatie/laravel-tags": "^4.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
